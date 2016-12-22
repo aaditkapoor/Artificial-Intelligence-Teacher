@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>
+		A.I.T
+	</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<body>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+<script>
+
+
+function toggleFullScreen() {
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+    requestFullScreen.call(docEl);
+  }
+  else {
+    cancelFullScreen.call(doc);
+  }
+}
+</script>
+ <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+                      <br>
+
+          </ul>
+        </nav>
+        <h3 class="text-muted"><b>A.I.T (Revise your school work with a  virtual teacher)</b></h3>
+      </div>
+
+                  <p align="right"><a class="btn btn-lg btn-success" href="#" onclick="toggleFullScreen()" role="button">Full Screen</a></p>
+
+      <div class="jumbotron">
+        <h1>Hi! I am A.I.T.</h1>
+        <p class="lead">I create assignments and ask you to solve it. I depict an actual teacher.
+          Welcome to the Marketplace! Here you can download questions/answers on any given subject
+          <hr>
+
+          <h2><b>Add something to the add marketplace</b></h2>
+<hr>
+          <form action = "/market_add_item" method="get">
+  <div class="form-group">
+  <label for="usr">Uploader Name</label>
+  <input type="text" name="name" class="form-control" id="usr">
+    <label for="email">Email</label>
+      <input type="email" name="email" class="form-control" id="pwd">
+  <label for="pwd">Subject</label>
+  <input type="text" name="subject" class="form-control" id="pwd">
+<input type = "submit">
+
+</div>
+</font>
+</form>
+
+
+
+<hr>
+      </div>
+          <h4><b>How am I different?</h4>
+          <p>I create assignments and ask you to solve it. I behave like a teacher.<br>Every Sunday, I give you assignments and I create a scorecard. I recommend you add this app to homesceen(Chrome on Android) for better experience.</p>
+       </div>
+      <footer class="footer">
+        <p>&copy; 2016 A.I.T Technologies (Aadit Kapoor, akapoorx00@gmail.com)</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+
+
+</body>
+</html>

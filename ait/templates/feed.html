@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>
+		FEED | A.I.T
+	</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+ <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/exit-session/">Exit Session</a></li>
+
+          </ul>
+        </nav>
+        <h3 class="text-muted"><b>A.I.T (Revise your school work with a teacher)</b></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Hi! I am A.I.T.</h1>
+        <p class="lead">Enter your questions and answers on this page, I will automatically create assignments based on what you provide and what you score.<br>
+        	Enter as many questions you like, when finished click on go back.</p><br>
+        	<b>Status: {{ message }}</b>
+        <p><form action = "/add/" method="get">
+	<div class="form-group">
+  <label for="usr">Question</label>
+  <input type="text" name="question" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Answer</label>
+  <input type="text" name="answer" class="form-control" id="pwd">
+</div>
+<input type = "submit">
+</font>
+</form>
+</p>
+        <p><a class="btn btn-lg btn-success" href="/" role="button">Go to Home</a></p>
+
+      </div>
+
+      <div class="row marketing">
+          <h4><b>How am I different?</h4>
+          <p>I create assignments and ask you to solve it. I behave like a teacher.<br>Every Sunday, I give you assignments and I create a scorecard. </p>
+       </div>
+      <footer class="footer">
+        <p>&copy; 2016 A.I.T Technologies</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>
+		 A.I.T | REGISTER
+	</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+ <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+      <div class="jumbotron">
+        <h1>Hi! I am A.I.T.</h1>
+        <p>Already a user! Click to login</p>
+                <p><a class="btn btn-lg btn-success" href="/get-info-login/" role="button">LOGIN HERE</a></p><br>
+                 <b>Visit the marketplace to add data</b><p><a class="btn btn-lg btn-success" href="/market_home/" role="button">MARKETPLACE</a></p>
+                <hr>
+
+<br>
+
+                <h2>Enter your details and click on submit to register</h2>
+        <form action = "/register/" method="get">
+  <div class="form-group">
+  <label for="usr">What should I call you?</label>
+  <input type="text" name="username" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Your email</label>
+  <input type="email" name="email" class="form-control" id="pwd">
+</div>
+<input type = "submit" text = "REGISTER">
+</font>
+</form>
+<hr>
+<h2><b>Feeling LAZY!! Try guest mode, enter your email and click try <i>GUEST MODE</i> button</b></h2>
+<form action = "/guest-mode/">
+  <label for="pwd">Your email</label>
+  <input type="email" name="email" class="form-control" id="pwd">
+                  <input type="submit">
+
+
+</form>
+
+
+
+      </div>
+
+      <div class="row marketing">
+        {% if given %}
+        <div class="col-lg-6">
+          <b>USERNAME: </B> {{ username }}<br>
+          <b>EMAIL: </b> {{email}}
+        {% endif %}
+          <h4><b>How am I different?</h4>
+          <p>I create assignments and ask you to solve it. I behave like a teacher.<br>Every Sunday, I give you assignments and I create a scorecard. </p>
+          <b>Vist my <a href="/market_home/">MARKETPLACE</a> to add data, or install different packs to it. (Only for registered users)</b> 
+
+       </div>
+      <footer class="footer">
+        <p>&copy; 2016 A.I.T Technologies</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+
+
+</body>
+</html>
